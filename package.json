@@ -7,7 +7,8 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "babel ./src --out-dir ./lib --source-maps",
 		"watch": "npm run build -- --watch",
-		"prepublishOnly": "npm run build"
+		"prepublishOnly": "npm run build",
+		"precommit": "lint-staged"
 	},
 	"repository": {
 		"type": "git",
@@ -32,10 +33,14 @@
 		"eslint-plugin-react": "^7.9.1",
 		"husky": "^0.14.3",
 		"lint-staged": "^7.2.0",
+		"np": "^3.0.4",
 		"prettier": "^1.13.5",
 		"prop-types": "^15.6.1",
 		"react": "^16.4.1",
 		"react-dom": "^16.4.1"
 	},
-	"dependencies": {}
+	"dependencies": {},
+	"lint-staged": {
+		"*.js": "eslint"
+	}
 }
