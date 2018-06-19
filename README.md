@@ -19,7 +19,7 @@ $ npm install --save react-autoheader
 // Input
 import { Header, Section } from 'react-autoheader';
 
-export const Example = () => {
+export const Example = () => (
 	<Section>
 		<Header>Top level</Header>
 		<Section>
@@ -31,7 +31,7 @@ export const Example = () => {
 		</Section>
 		<Header>Top level</Header>
 	</Section>;
-};
+);
 ```
 
 ```html
